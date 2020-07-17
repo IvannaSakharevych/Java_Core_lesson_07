@@ -4,6 +4,8 @@ public class Su_27 extends Plane implements TurboAcceleration, StealthTechnology
 
 	private int maxSpeed;
 	private String color;
+	private PlaneControl planeControl = new PlaneControl();
+	
 	
 	public Su_27(int length, int width, int weight, int maxSpeed, String color) {
 		super(length, width, weight);
@@ -28,6 +30,23 @@ public class Su_27 extends Plane implements TurboAcceleration, StealthTechnology
 
 		int speed = (int) (Math.random() * this.maxSpeed);
 		System.out.println("Включаємо турбоприскорення і тікаємо зі швидкістю " + speed + " км/год.");
+	}
+	
+	public void moveUP() {
+		planeControl.moveUP();
+		
+	}
+
+	public void moveDOWN() {
+		planeControl.moveDOWN();
+	}
+
+	public void moveLEFT() {
+		planeControl.moveLEFT();
+	}
+
+	public void moveRIGHT() {
+		planeControl.moveRIGHT();
 	}
 
 }

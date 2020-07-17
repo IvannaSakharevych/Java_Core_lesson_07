@@ -1,6 +1,6 @@
 package lesson07;
 
-public abstract class Plane extends PlaneControl{
+public abstract class Plane {
 	
 	private int length;
 	private int width;

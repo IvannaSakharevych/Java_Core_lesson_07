@@ -3,8 +3,7 @@ package lesson07;
 public class PlaneControl {
 	
 	void moveUP() {
-		int moveup = (int) (Math.random() * 10000);
-		System.out.println("Рухаємося вверх на " + moveup + " км.");
+		
 	}
 	
 	void moveDOWN() {
